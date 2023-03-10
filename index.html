@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- My todo list head tag start -->
+    <header>
+      <h1>My Todo List</h1>
+    </header>
+    <!-- My todo list head tag end -->
+
+    <!-- My todo list main tag start -->
+    <form>
+      <div class="search">
+        <input type="text" class="todo-input" placeholder="Add..." />
+
+        <button class="todo-button" type="submit">
+          <i class="fa-regular fa-square-plus"></i>
+        </button>
+      </div>
+      <div class="select">
+        <select name="todos" class="filter-todo">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+
+          <option value="uncompleted">Uncompleted</option>
+        </select>
+      </div>
+    </form>
+
+    <div class="todo-container">
+      <ul class="todo-list"></ul>
+    </div>
+    <!-- My todo list main tag end -->
+
+    <!-- Alert Box Start -->
+
+    <div class="alert-wrapper">
+      <div class="alert-success">
+        <div>Ekleme Basarili.</div>
+      </div>
+      <div class="alert-warning">
+        <div>Input Alani bos gecilemez!</div>
+      </div>
+    </div>
+    <!-- Alert Box End -->
+  </body>
+  <script src="index.js"></script>
+</html>
